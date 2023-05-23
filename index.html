@@ -63,6 +63,103 @@
                 background-image: url('https://picsum.photos/id/160/900/900.jpg');
               "></div>
         </div>
+        <section class="section-form" id="section-form">
+                <div class="content">
+                        <h2 class="title-form">Contáctame</h2>
+
+                        <div class="contact-wrapper animated bounceInUp">
+                                <div class="contact-form">
+                                        <h3>Completa el formulario</h3>
+                                        <form action="" class="formulario" id="formulario">
+
+                                                <div class="group_form" id="group_fullname">
+                                                        <p>
+                                                                <label for="fullname" class="form_label">Nombre
+                                                                        Completo</label>
+                                                        <div class="group_form_input">
+                                                                <input class="form_input" type="text" name="fullname"
+                                                                        id="name" required />
+                                                                <i class="icon_input fas fa-times-circle"></i>
+                                                        </div>
+                                                        </p>
+                                                        <p class="error_message"><i
+                                                                        class="fa-solid fa-circle-exclamation"></i>
+                                                                Maximo 30 caracteres. No se admiten simbolos</p>
+                                                </div>
+
+                                                <div class="group_form" id="group_email">
+                                                        <p>
+                                                                <label for="email" class="form_label">Correo</label>
+                                                        <div class="group_form_input">
+                                                                <input class="form_input" type="email" name="email"
+                                                                        id="email" required />
+                                                                <i class="icon_input fas fa-times-circle"></i>
+                                                        </div>
+                                                        </p>
+                                                        <p class="error_message"><i
+                                                                        class="fa-solid fa-circle-exclamation"></i> El
+                                                                correo no cumple con el formato</p>
+                                                </div>
+
+                                                <div class="group_form" id="group_phone">
+                                                        <p>
+                                                                <label for="phone" class="form_label">Teléfono</label>
+                                                        <div class="group_form_input">
+                                                                <input class="form_input" type="tel" name="phone"
+                                                                        id="phone" required />
+                                                                <i class="icon_input fas fa-times-circle"></i>
+                                                        </div>
+                                                        </p>
+                                                        <p class="error_message"><i
+                                                                        class="fa-solid fa-circle-exclamation"></i> Solo
+                                                                se admiten números</p>
+                                                </div>
+
+                                                <div class="group_form" id="group_affair">
+                                                        <p>
+                                                                <label for="affair" class="form_label">Asunto</label>
+                                                        <div class="group_form_input">
+                                                                <input class="form_input" type="text" name="affair"
+                                                                        id="affair" required />
+                                                                <i class="icon_input fas fa-times-circle"></i>
+                                                        </div>
+                                                        </p>
+                                                        <p class="error_message"><i
+                                                                        class="fa-solid fa-circle-exclamation"></i>
+                                                                Ingrese un asunto entre 5 y 20 caracteres</p>
+                                                </div>
+
+                                                <p class="block">
+                                                        <label for="message">Mensaje</label>
+                                                        <textarea name="message" id="message" rows="3"
+                                                                required></textarea>
+                                                </p>
+                                                <p class="block">
+                                                        <button type="submit">Envíar</button>
+                                                </p>
+                                        </form>
+
+                                        <a href="mailto:sarsa@gmail.com" id="send-mail"></a>
+                                </div>
+
+                                <div class="contact-info">
+                                        <h4>Más Información</h4>
+                                        <ul>
+                                                <li><i class="fas fa-map-marker-alt"></i> CABA</li>
+                                                <li><i class="fas fa-phone"></i> (+54) 911 1111-1111</li>
+                                                <li>
+                                                        <i class="fas fa-envelope-open-text"></i> correo@correo.com
+                                                </li>
+                                        </ul>
+                                        <p>
+                                                Contáctanos y responderemos a la brevedad :)
+                                        </p>
+                                        <p>Buenos Aires - Argentina</p>
+                                </div>
+                        </div>
+                </div>
+                <div id="myMap"></div>
+        </section>
 
         <footer class="footer">
                 <div class="footer_icon">
@@ -79,6 +176,7 @@
                         </div>
                 </div>
         </footer>
+        <script src="/js/app.js"></script>
 </body>
 
 </html>

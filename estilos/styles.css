@@ -8,6 +8,62 @@
     font-family: sans-serif;
     font-size: 3rem;
   }
+  /* --------------------- */
+  :root {
+    --fuenteGeneral: "Fira Code", monospace;
+  
+    --primario: #2d2e2e;
+    --claro: #bac8d3;
+    --blanco: #fff;
+    --gris-oscuro: #212222;
+    --amarillo: #e0a80d;
+    --amarillo-claro: #eec554;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62, 5%;
+    /* 1rem = 10px */
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: var(--fuenteGeneral);
+    background-color: var(--gris-oscuro);
+  }
+  
+
+
+  /* ------------------------ */
   
   .grid-item {
     display: flex;
@@ -36,6 +92,149 @@
     padding: 20px;
     grid-auto-flow: dense;
   }
+
+
+
+/** Estilos Formulario del Index.html */
+.section-form {
+  padding-bottom: 50px;
+  background-color: var(--primario);
+}
+
+.content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.title-form {
+  text-align: center;
+  color: var(--amarillo);
+  text-transform: uppercase;
+}
+
+.contact-wrapper {
+  margin: 0 auto;
+  box-shadow: 0 0 25px 0 rgba(0 0 0 / 0.9);
+  border-radius: 10px;
+}
+
+.contact-wrapper>* {
+  padding: 2rem;
+}
+
+.contact-form {
+  background-color: var(--gris-oscuro);
+  color: var(--blanco);
+  border-radius: 10px 10px 0 0;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+  grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  background: none;
+  outline: 0;
+  color: var(--blanco);
+  border-bottom: 1px solid var(--amarillo);
+}
+
+.contact-form form button {
+  background: var(--amarillo);
+  color: var(--gris-oscuro);
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background-color: var(--amarillo-claro);
+  color: var(--gris-oscuro);
+  transition: background-color 1s ease;
+  outline: 0;
+}
+
+.contact-info {
+  background-color: var(--amarillo);
+  border-radius: 0 0 10px 10px;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  padding: 0.5rem;
+}
+
+
+.group_form_input{
+  position: relative;
+}
+
+.error_message {
+  font-size: 0.6rem;
+  margin-bottom: 0;
+  display: none;
+}
+
+.error_message_activo {
+  display: block;
+}
+
+.icon_input{
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  font-size: 16px;
+  z-index: 100;
+  opacity: 0;
+}
+
+.group_form{
+  padding: 5%;
+}
+
+/*Estilos para las validaciones del formulario*/
+.group_form-correcto .icon_input{
+	color: #1ed12d;
+	opacity: 1;
+}
+.group_form-incorrecto .icon_input {
+	color:#bb2929;
+  opacity: 1;
+}
+
+
 
 
 
