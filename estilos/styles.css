@@ -75,7 +75,10 @@
   
     display: none;
   }
-  
+  .galeria {
+    display: flex;
+
+  }
   /* MOBILE */
   @media (max-width: 650px) {
     body {
