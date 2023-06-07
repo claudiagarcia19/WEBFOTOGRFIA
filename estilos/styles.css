@@ -34,13 +34,13 @@
   .logo {
     font-size: 20px;
     font-weight: bold;
-    padding: 10 40px;
-    line-height: 40px;
+    padding: 10 80px;
+    line-height: 60px;
   }
   
   .nav-menu {
     display: flex;
-    margin-right: 40px;
+    margin-right: 60px;
     list-style: none;
   }
   
